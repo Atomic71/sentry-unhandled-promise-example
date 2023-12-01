@@ -1,3 +1,5 @@
+# TO run project, go to App.tsx file, add "dsn" key, and do npm run ios (or android,whichever you prefer)
+
 # Sentry React Native Issue: Unhandled Promise Rejections
 
 ## Overview
