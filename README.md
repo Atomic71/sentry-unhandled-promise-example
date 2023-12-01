@@ -1,8 +1,76 @@
+# Sentry React Native Issue: Unhandled Promise Rejections
+
+## Overview
+
+This repository demonstrates an issue encountered with Sentry in a React Native application, specifically regarding the handling of unhandled promise rejections. Sentry for React Native promises out-of-the-box functionality to capture unhandled promise rejections, but it appears not to be functioning as expected.
+
+<!--  -->
+
+[Sentry's declaration in regards to unhandled promises](https://docs.sentry.io/platforms/react-native/troubleshooting/#unhandled-promise-rejections)
+
+[Github issue #1](https://github.com/getsentry/sentry-react-native/issues/2268)
+
+[Github issue #2](https://github.com/getsentry/sentry-react-native/issues/1077)
+
+## Issue Description
+
+When unhandled promise rejections occur in the React Native application, Sentry does not seem to capture these errors consistently or at all. This behavior is contrary to Sentry's documentation and expectations for React Native applications.
+
+### Environment
+
+- React Native Version: [Specify version]
+- Sentry Version: [Specify version]
+
+## Reproduction of the Issue
+
+This repository contains a minimal React Native setup where this issue can be reproduced.
+
+### Steps to Reproduce
+
+1. Clone this repository.
+2. Install dependencies using `npm install` or `yarn`.
+3. Run the application on a simulator or physical device.
+4. Trigger an unhandled promise rejection using [describe the method or action].
+5. Observe the behavior in the Sentry dashboard.
+
+## Expected Behavior
+
+Sentry should capture and report all unhandled promise rejections, as per its documentation for React Native integration.
+
+## Actual Behavior
+
+Unhandled promise rejections are not captured or reported in some or all cases.
+
+## Additional Information
+
+- Link to Sentry documentation/reference: [URL]
+- Discussion on similar issues: [URLs to GitHub issues or discussions if available]
+
+## Contributing
+
+This issue needs more insights and potential solutions. If you have experienced a similar issue or have expertise with Sentry and React Native, your contribution would be greatly appreciated. You can contribute by:
+
+- Testing the issue with different versions of React Native or Sentry and sharing your findings.
+- Suggesting potential fixes or workarounds.
+- Sharing insights or similar experiences in the 'Discussions' section of this repository.
+
+## Contact
+
+Feel free to contact me for any further information or clarification regarding this issue. [Provide contact method or leave blank if not applicable]
+
+## License
+
+[Specify the license if applicable, or state that the repository is not under any specific license]
+
+---
+
+**Note:** This repository and README are intended for collaborative troubleshooting and finding a resolution to the Sentry React Native issue regarding unhandled promise rejections.
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 

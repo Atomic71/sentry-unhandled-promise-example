@@ -27,7 +27,8 @@ import {
 import * as Sentry from '@sentry/react-native';
 
 Sentry.init({
-  dsn: 'https://8e8035528b83eb374fe5563197fab6f1@o4505924785733632.ingest.sentry.io/4505946882768896',
+  // place your DSN here
+  dsn: '',
 });
 
 type SectionProps = PropsWithChildren<{
@@ -38,11 +39,12 @@ function Section({children, title}: SectionProps): JSX.Element {
   useEffect(() => {
     // async unhandled promise to test sentry
     console.log('mounted');
-    new Promise((resolve, reject) => {
-      setTimeout(() => {
-        reject(new Error('promise error'));
-      }, 1000);
-    });
+    // throw new Error('unhandled error');
+    // new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     reject(new Error('promise error'));
+    //   }, 1000);
+    // });
   }, []);
   const isDarkMode = useColorScheme() === 'dark';
   return (
