@@ -37,9 +37,13 @@ type SectionProps = PropsWithChildren<{
 
 function Section({children, title}: SectionProps): JSX.Element {
   useEffect(() => {
-    // async unhandled promise to test sentry
+    // async unhandled promise to test sentry, uncomment to test
     console.log('mounted');
+
+    // works
     // throw new Error('unhandled error');
+
+    // doesn't work
     // new Promise((resolve, reject) => {
     //   setTimeout(() => {
     //     reject(new Error('promise error'));
